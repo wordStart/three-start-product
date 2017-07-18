@@ -1,0 +1,52 @@
+<div class="message">
+	<div class="col-md-12"><h4>基本信息</h4></div>
+	<div class="col-md-12">
+		<div class="col-md-6">
+			<span class="pull-left">责任人</span>
+			<div class="dropdown pull-right" id="mydropdownPeople">
+				<button id="responsiblecom" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    选择责任单位
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="responsiblecom">
+				    <li ng-repeat="i in pepleData">{{i}}</li>
+				</ul>
+			</div>
+			<input class="form-control" id="disabledInputPeople" type="text" placeholder="张鑫，185020192181" disabled>
+		</div>
+		<div class="col-md-6">
+		<span class="pull-left">责任人单位</span>
+			<div class="dropdown pull-right" id="mydropdownCon">
+				<button id="responsiblecom" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    选择责任单位
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="responsiblecom">
+				    <li ng-repeat="i in compnyData">{{i}}</li>
+				</ul>
+			</div>
+			<input class="form-control" id="disabledInputCon" type="text" placeholder="XXXXXX" disabled>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<p>请输入栏目名称</p>
+		<input class="form-control" id="disabledInput" type="text" placeholder="文本框内容">
+	</div>
+	<div class="col-md-12 up-img">
+		<upload-img data="1"></upload-img>
+	</div>
+	<div class="col-md-12 btn">
+		<span class="active">保存</span>
+	</div>
+</div>
+<script>
+	// $('.selectpicker').selectpicker({
+	// 	  // style: 'btn-info',
+	// 	  // size: 4
+	// 	})
+	// 	.on("change",function(){
+	// 		console.log($(".filter-option").text())
+			
+	// 	})
+
+</script>
